@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Poppins', cursive;
-    box-sizing: border-box; /* Asegura que padding y borde no excedan el tamaño del elemento */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,6 @@ body {
     align-items: center;
     justify-content: center;
     background-color: black;
-    margin: 0;
 }
 
 .botones {
@@ -37,10 +36,10 @@ body {
 }
 
 .greetings {
-    font-size: 8vw; /* Cambié rem a vw para que escale según el ancho de la pantalla */
+    font-size: 10vw; /* Incrementamos el tamaño a 10vw */
     font-weight: 900;
     text-align: center;
-    word-wrap: break-word; /* Permite que las palabras largas se ajusten */
+    word-wrap: break-word;
 }
 
 .greetings > span {
@@ -58,7 +57,7 @@ body {
     }
 }
 
-/* Retrasos en las animaciones para cada letra */
+/* Animaciones con retrasos */
 .greetings > span:nth-child(2) { animation-delay: .2s; }
 .greetings > span:nth-child(3) { animation-delay: .4s; }
 .greetings > span:nth-child(4) { animation-delay: .6s; }
@@ -72,48 +71,48 @@ body {
 .greetings > span:nth-child(12) { animation-delay: 2.2s; }
 
 .description {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Aumentamos el tamaño de la descripción */
     margin-bottom: 20px;
     text-align: center;
 }
 
-/* Ajustamos el tamaño del texto del botón */
 .button a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Aumentamos el tamaño del botón */
     color: #111;
 }
 
-/* Estilos responsivos */
+/* Estilos responsivos para pantallas medianas */
 @media screen and (max-width: 768px) {
     .greetings {
-        font-size: 6vw; /* Reduzco el tamaño en pantallas medianas */
+        font-size: 8vw; /* Más grande en tablets */
     }
 
     .description {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .button a {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
 
+/* Estilos responsivos para pantallas pequeñas (móviles) */
 @media screen and (max-width: 480px) {
     .greetings {
-        font-size: 5vw; /* Ajusto el tamaño de fuente para móviles */
+        font-size: 12vw; /* Aumentamos a 12vw para que sea más visible en móviles */
     }
 
     .description {
-        font-size: 1.2rem;
+        font-size: 2rem; /* Aumentamos el tamaño de la descripción */
     }
 
     .button {
-        margin-top: 10px; /* Añade espacio entre los elementos */
+        margin-top: 10px;
     }
 
     .button a {
-        font-size: 1rem;
-        padding: 10px 20px; /* Ajusto el tamaño del botón en móviles */
+        font-size: 1.5rem; /* Ajustamos el tamaño del botón para móviles */
+        padding: 10px 20px;
     }
 }
